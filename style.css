@@ -9,6 +9,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    background-color: var(--bg-body);
 }
 
 html {
@@ -16,7 +17,20 @@ html {
 }
 
 p {
-    color: rgb(85, 85, 85);
+    color: var(--paragraph-color);
+}
+
+/* VARIABLES */
+:root {
+    --bg-body: #fff;
+    --border-color: rgb(163, 163, 163);
+    --paragraph-color: rgb(85, 85, 85);
+    --text-hover-color: rgb(181, 181, 181);
+    --black-color: black;
+    --a-hover-color: grey;
+    --bg-container: rgb(250, 250, 250);
+    --border: rgb(53, 53, 53);
+    --border-2: rgb(255, 255, 255);
 }
 
 /* TRANSITION */
@@ -46,16 +60,16 @@ nav {
 }
 
 a {
-    color: black;
+    color: var(--black-color);
     text-decoration: none;
     text-decoration-color: white;
 }
 
 a:hover {
-    color: grey;
+    color: var(--a-hover-color);
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+    text-decoration-color: var(--text-hover-color);
 }
 
 .logo {
@@ -89,7 +103,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: var(--black-color);
     transition: all 0.3 ease-in-out;
 }
 
@@ -109,7 +123,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: var(--black-color);
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -178,7 +192,7 @@ section {
 
 .section__pic-container .profile-picture{
     border-radius: 5rem;
-    background-color: rgb(224, 221, 221) ;
+    background-color: var(--bg-container) ;
     padding: 2px;
 }
 
@@ -237,7 +251,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: var(--border) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -247,12 +261,12 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-    background: rgb(53, 53, 53);
+    background: var(--border);
     color: white;
 }
 
 .btn-color-1:hover {
-    background: rgb(0, 0, 0);
+    background: var(--black-color);
 }
 
 .btn-color-2 {
@@ -260,7 +274,7 @@ section {
 }
 
 .btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
+    border: var(--border-2) 0.1rem solid;
 }
 
 .btn-container {
@@ -304,8 +318,8 @@ section {
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border: var(--border) 0.1rem solid;
+    border-color: var(--border-color);
     text-align: center;
 }
 
@@ -327,7 +341,7 @@ section {
 }
 
 .experience-sub-title {
-    color: rgb(85, 85, 85);
+    color: var(--paragraph-color);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -366,8 +380,8 @@ article .icon {
 }
 
 .color-container {
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    border-color: var(--border-color);
+    background: var(--bg-container);
 }
 
 .project-img {
@@ -378,12 +392,12 @@ article .icon {
 
 .project-title {
     margin: 1rem;
-    color: black;
+    color: var(--black-color);
 }
 
 .project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
+    color: var(--black-color);
+    border-color: var(--border-color);
 }
 
 /* CONTACT */
@@ -399,8 +413,8 @@ article .icon {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border: var(--border) 0.1rem solid;
+    border-color: var(--border-color);
     background: (250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
