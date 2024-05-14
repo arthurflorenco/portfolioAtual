@@ -65,6 +65,7 @@ a,
 nav,
 .nav-links {
     display: flex;
+    background-color: #73C0FC;
 }
 
 nav {
@@ -137,6 +138,9 @@ a:hover {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .menu-links a {
@@ -185,7 +189,7 @@ a:hover {
 .switch {
     font-size: 17px;
     position: relative;
-    display: inline-block;
+    display: flex;
     width: 64px;
     height: 34px;
 }

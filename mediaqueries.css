@@ -23,6 +23,9 @@
         display: flex;
     }
 
+    .switch{
+        margin-bottom: 5px;
+    } 
     #experience,
     .experience-details-container {
         margin-top: 2rem;
